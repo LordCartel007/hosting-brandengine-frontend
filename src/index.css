@@ -1,0 +1,814 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'CartelFont';
+  src: url('https://assets2.lordcartel.com/Jraot-Regular.ttf') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'fighterfont';
+  src: url('https://assets2.lordcartel.com/Fighter%20Attack.ttf')
+    format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ciberus';
+  src: url(' https://assets2.lordcartel.com/CiberusDemo-Regular.ttf')
+    format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'outlinefont';
+  src: url('https://assets2.lordcartel.com/Jraot-Outline.ttf') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+#loaderVideo {
+  height: 100vh;
+  width: 100vw;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.dashdiv {
+  max-width: 40vw;
+  width: auto;
+}
+
+/* Small screens: phones */
+@media (max-width: 600px) {
+  .dashdiv {
+    max-width: 80vw;
+  }
+}
+
+/* Medium screens: tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .dashdiv {
+    max-width: 60vw;
+  }
+}
+
+/* Default: desktop */
+
+/* Phones and smaller screens */
+
+.searchbar {
+  max-width: 90vw !important;
+  box-sizing: border-box;
+}
+
+.search-input-row {
+  flex-direction: column;
+  align-items: stretch;
+  height: 110px;
+}
+
+.search-input-row input {
+  width: 100%;
+  flex: none;
+  box-sizing: border-box;
+}
+
+.search-clear {
+  width: 100%;
+  max-width: 90vw;
+  display: flex;
+  gap: 10px;
+}
+
+.search-clear button {
+  flex: 1;
+  min-width: 0;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+div label {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+div input {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+div button {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.color-preview {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.video-settings > label,
+.video-settings > input,
+.video-settings > .color-row,
+.video-settings > .video-settings-buttons {
+  margin-bottom: 10px;
+}
+
+.video-settings .color-row {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.image-settings > label,
+.image-settings > input,
+.image-settings > .color-row,
+.image-settings > .video-settings-buttons {
+  margin-bottom: 10px;
+}
+
+.image-settings .color-row {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.banner-container {
+  width: 100%;
+  max-width: 100vw;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 3px;
+  background-color: #ffc400;
+}
+
+.banner-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.seperation-div {
+  height: 40px;
+  background-color: rgb(0, 0, 0);
+  width: 100vw;
+}
+
+.background-section {
+  min-height: 100vh;
+  background-image: url('https://assets2.lordcartel.com/landscape-1.webp');
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: rgb(29, 29, 29);
+}
+
+.background-content {
+  position: relative;
+  z-index: 1;
+}
+
+.analytic-div {
+  border: 1px solid rgb(5, 199, 247);
+
+  background-color: rgba(34, 34, 34, 0.55);
+
+  backdrop-filter: blur(0.2px);
+
+  border-radius: 20px;
+}
+
+.brand-engine-marketing {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 100px 24px;
+
+  color: #fff;
+  overflow-wrap: break-word;
+
+  min-height: 100vh;
+
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  background-image: url('https://assets2.lordcartel.com/landscape-5.webp');
+
+  background-color: rgb(14, 14, 14);
+}
+
+.marketing-inner {
+  width: 100%;
+  max-width: 70vw;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.55);
+
+  backdrop-filter: blur(0.2px);
+  padding: 60px;
+  border-radius: 20px;
+}
+
+.marketing-eyebrow {
+  margin: 0 0 2px;
+  color: #dddddd;
+  font-size: 25px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  line-height: 1.8;
+
+  font-family: 'CartelFont', sans-serif;
+}
+
+.marketing-title {
+  max-width: 900px;
+  margin: 0 0 32px;
+  font-size: clamp(36px, 6vw, 76px);
+
+  line-height: 1.08;
+  letter-spacing: -2px;
+  overflow-wrap: anywhere;
+  font-weight: bold;
+  margin-top: 20px;
+  font-family: 'CartelFont', sans-serif;
+}
+
+.marketing-title span {
+  display: block;
+  color: #ffbb00;
+  margin-top: 8px;
+}
+
+.marketing-intro {
+  max-width: 720px;
+  margin: 0 0 28px;
+  color: #f0f0f0;
+  font-size: clamp(20px, 2.2vw, 24px);
+  line-height: 1.8;
+  font-family: 'Ciberus', sans-serif;
+}
+
+.marketing-description {
+  max-width: 680px;
+  margin: 0 0 24px;
+  color: #f6f8f8;
+  font-size: 25px;
+  line-height: 1.95;
+  font-family: 'Ciberus', sans-serif;
+}
+
+.marketing-cta {
+  margin-top: 72px;
+  padding: 36px;
+  border: 1px solid rgba(5, 199, 247, 0.35);
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.marketing-cta h2 {
+  margin: 0 0 12px;
+  font-size: clamp(22px, 3.5vw, 38px);
+  font-weight: 800;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  font-family: 'CartelFont', sans-serif;
+}
+
+.marketing-cta p {
+  margin: 24px 0 28px;
+  color: #c7c7c7;
+  font-size: 20px;
+  line-height: 1.8;
+  font-family: 'Ciberus', sans-serif;
+}
+
+.marketing-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 16px 22px;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  color: #000000;
+  background: #fcc100;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    background 0.25s,
+    color 0.25s;
+  font-family: 'fighterfont', sans-serif;
+}
+
+.marketing-button:hover {
+  color: #000000;
+  background-color: #0095f8;
+}
+
+@media (max-width: 767px) {
+  .brand-engine-marketing {
+    padding: 10px;
+  }
+
+  .marketing-eyebrow {
+    margin-bottom: 2px;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .marketing-title {
+    letter-spacing: -1px;
+    line-height: 1.2;
+  }
+
+  .marketing-intro {
+    line-height: 1.7;
+  }
+
+  .marketing-description {
+    font-size: 15px;
+    line-height: 1.85;
+  }
+
+  .marketing-cta {
+    margin-top: 48px;
+    padding: 24px 18px;
+  }
+
+  .marketing-button {
+    width: 100%;
+  }
+
+  .marketing-inner {
+    max-width: 85vw;
+    padding: 30px;
+  }
+}
+
+.reset-div {
+  min-height: 100vh;
+  background-image: url('https://assets2.lordcartel.com/landscape-5.webp');
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: rgb(29, 29, 29);
+}
+
+.resetinner-div {
+  border: 1px solid rgb(5, 199, 247);
+
+  background-color: rgba(0, 0, 0, 0.55);
+
+  backdrop-filter: blur(0.2px);
+
+  border-radius: 20px;
+}
+
+.verify-div {
+  min-height: 100vh;
+  background-image: url('https://assets2.lordcartel.com/landscape-4.webp');
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: rgb(29, 29, 29);
+}
+
+.verify-inner {
+  border: 1px solid rgb(5, 199, 247);
+
+  background-color: rgba(0, 0, 0, 0.55);
+
+  backdrop-filter: blur(0.2px);
+
+  border-radius: 20px;
+}
+
+.forgetdiv {
+  min-height: 100vh;
+  background-image: url('https://assets2.lordcartel.com/landscape-1.webp');
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: rgb(29, 29, 29);
+}
+
+.forgetinner-div {
+  border: 1px solid rgb(5, 199, 247);
+
+  background-color: rgba(0, 0, 0, 0.55);
+
+  backdrop-filter: blur(0.2px);
+
+  border-radius: 20px;
+}
+
+/* Login */
+.background-login {
+  min-height: 100vh;
+  background-image: url('https://assets2.lordcartel.com/landscape-1.webp');
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: rgb(29, 29, 29);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.login-div {
+  border: 1px solid rgb(5, 199, 247);
+
+  background-color: rgba(0, 0, 0, 0.55);
+
+  backdrop-filter: blur(0.2px);
+
+  border-radius: 20px;
+}
+
+.background-signup {
+  min-height: 100vh;
+  background-image: url('https://assets2.lordcartel.com/landscape-3.webp');
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: rgb(29, 29, 29);
+}
+
+.signup-div {
+  border: 1px solid rgb(5, 199, 247);
+
+  background-color: rgba(34, 34, 34, 0.55);
+
+  backdrop-filter: blur(0.2px);
+
+  border-radius: 20px;
+
+  margin-bottom: 100px;
+}
+
+.custom-360-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  margin-top: 18px;
+  padding: 12px 14px;
+  background: #39e8790a;
+  border-left: 3px solid #39e879;
+  border-radius: 4px;
+}
+
+.custom-360-amount {
+  color: #39e879;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  line-height: 1.2;
+}
+
+.custom-360-description {
+  color: #a5aaa6;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.paypagediv {
+  width: 100%;
+
+  min-height: 100vh;
+  background-image: url('https://assets2.lordcartel.com/landscape-7.webp');
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: rgb(0, 0, 0);
+
+  padding: 40px;
+}
+
+.paypageinner {
+  font-size: 20px;
+  font-weight: bolder;
+  border: 1px solid rgb(5, 199, 247);
+
+  background-color: rgba(34, 34, 34, 0.55);
+
+  backdrop-filter: blur(0.2px);
+  color: rgb(233, 231, 231);
+  padding: 25px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+
+  justify-items: center;
+
+  width: fit-content;
+
+  margin: 0 auto;
+  text-align: center;
+}
+
+.BrandGod-div {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 100px 24px;
+
+  color: #fff;
+  overflow-wrap: break-word;
+
+  min-height: 100vh;
+
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  background-image: url('https://assets2.lordcartel.com/landscape-6.webp');
+
+  background-color: rgb(14, 14, 14);
+}
+
+.BrandSlayer-div {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 100px 24px;
+
+  color: #fff;
+  overflow-wrap: break-word;
+
+  min-height: 100vh;
+
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  background-image: url('https://assets2.lordcartel.com/landscape-7.webp');
+
+  background-color: rgb(14, 14, 14);
+}
+
+.BrandOverlord-div {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 100px 24px;
+
+  color: #fff;
+  overflow-wrap: break-word;
+
+  min-height: 100vh;
+
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  background-image: url('https://assets2.lordcartel.com/landscape-1.webp');
+
+  background-color: rgb(14, 14, 14);
+}
+
+.BrandReaper-div {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 100px 24px;
+
+  color: #fff;
+  overflow-wrap: break-word;
+
+  min-height: 100vh;
+
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  background-image: url('https://assets2.lordcartel.com/landscape-2.webp');
+
+  background-color: rgb(14, 14, 14);
+}
+
+.brand-engine-marketing-2 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 100px 24px;
+
+  color: #fff;
+  overflow-wrap: break-word;
+
+  min-height: 100vh;
+
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  background-image: url('https://assets2.lordcartel.com/landscape-2.webp');
+
+  background-color: rgb(14, 14, 14);
+}
+
+.brand-engine-marketing-3 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 100px 24px;
+
+  color: #fff;
+  overflow-wrap: break-word;
+
+  min-height: 100vh;
+
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  background-image: url('https://assets2.lordcartel.com/landscape-6.webp');
+
+  background-color: rgb(14, 14, 14);
+}
+
+.brand-engine-marketing-4 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 100px 24px;
+
+  color: #fff;
+  overflow-wrap: break-word;
+
+  min-height: 100vh;
+
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  background-image: url('https://assets2.lordcartel.com/landscape-3.webp');
+
+  background-color: rgb(14, 14, 14);
+}
+
+.brand-engine-marketing-5 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 100px 24px;
+
+  color: #fff;
+  overflow-wrap: break-word;
+
+  min-height: 100vh;
+
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  background-image: url('https://assets2.lordcartel.com/landscape-1.webp');
+
+  background-color: rgb(14, 14, 14);
+}
+
+.brand-engine-marketing-6 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 100px 24px;
+
+  color: #fff;
+  overflow-wrap: break-word;
+
+  min-height: 100vh;
+
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  background-image: url('https://assets2.lordcartel.com/landscape-6.webp');
+
+  background-color: rgb(14, 14, 14);
+}
+
+.brand-engine-marketing-7 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 100px 24px;
+
+  color: #fff;
+  overflow-wrap: break-word;
+
+  min-height: 100vh;
+
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  background-image: url('https://assets2.lordcartel.com/landscape-4.webp');
+
+  background-color: rgb(14, 14, 14);
+}
+
+.view-div {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 100px 24px;
+
+  color: #fff;
+  overflow-wrap: break-word;
+
+  min-height: 100vh;
+
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  background-image: url('https://assets2.lordcartel.com/landscape-7.webp');
+
+  background-color: rgb(14, 14, 14);
+}
+
+.view-div-inner {
+  border: 1px solid rgb(5, 199, 247);
+
+  background-color: rgba(0, 0, 0, 0.55);
+
+  backdrop-filter: blur(0.2px);
+
+  border-radius: 20px;
+
+  margin-bottom: 100px;
+}
+
+.duration-div {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 100px 24px;
+
+  color: #fff;
+  overflow-wrap: break-word;
+
+  min-height: 100vh;
+
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  background-image: url('https://assets2.lordcartel.com/landscape-3.webp');
+
+  background-color: rgb(14, 14, 14);
+}
+
+.duration-inner {
+  border: 1px solid rgb(5, 199, 247);
+
+  background-color: rgba(0, 0, 0, 0.55);
+
+  backdrop-filter: blur(0.2px);
+
+  border-radius: 20px;
+
+  margin-bottom: 100px;
+}
+
+.bandwidth-div {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 100px 24px;
+
+  color: #fff;
+  overflow-wrap: break-word;
+
+  min-height: 100vh;
+
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  background-image: url('https://assets2.lordcartel.com/landscape-5.webp');
+
+  background-color: rgb(14, 14, 14);
+}
+
+.bandwidth-inner {
+  border: 1px solid rgb(5, 199, 247);
+
+  background-color: rgba(0, 0, 0, 0.55);
+
+  backdrop-filter: blur(0.2px);
+
+  border-radius: 20px;
+
+  margin-bottom: 100px;
+}

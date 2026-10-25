@@ -1,0 +1,104 @@
+.cards-section {
+  width: 100%;
+  padding: 40px 80px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-image: url('https://assets2.lordcartel.com/landscape-5.webp');
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: rgb(0, 0, 0);
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 80px;
+}
+
+.image-card {
+  min-width: 0;
+  padding: 10px;
+
+  border-radius: 12px;
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+
+  border: 1px solid rgb(5, 199, 247);
+
+  background-color: rgba(0, 0, 0, 0.55);
+
+  backdrop-filter: blur(0.2px);
+}
+
+.image-card:hover {
+  transform: translateY(-4px);
+  border-color: #39e879;
+}
+
+.image-card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #1a1d1b;
+}
+
+.image-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-card-title {
+  margin: 14px 4px 6px;
+  color: #39e879;
+  font-size: 18px;
+  font-weight: 100;
+  font-family: 'CartelFont', sans-serif;
+}
+
+/* Medium screens: 2 cards */
+@media (min-width: 601px) and (max-width: 999px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 100px;
+  }
+}
+
+/* Small screens: 1 card */
+@media (max-width: 600px) {
+  .cards-section {
+    padding: 25px 40px;
+  }
+
+  .cards-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 60px;
+  }
+}
+
+.showcase-heading {
+  font-size: 20px;
+  font-weight: 100;
+  border: 1px solid rgb(5, 199, 247);
+  font-family: 'CartelFont', sans-serif;
+  background-color: rgba(0, 0, 0, 0.55);
+
+  backdrop-filter: blur(0.2px);
+  color: rgb(233, 231, 231);
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+
+  justify-items: center;
+
+  width: fit-content;
+
+  margin: 0 auto 30px;
+  text-align: center;
+}
