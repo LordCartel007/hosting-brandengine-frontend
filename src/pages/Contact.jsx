@@ -184,7 +184,15 @@ const Contact = () => {
           <p className="marketing-eyebrow">Instagram</p>
           <p className="marketing-description">@thylordcartel</p>
           <p className="marketing-description">
-            Payment should only be made on our website with a verified domain
+            We require an initial deposit to start the creation of your brand
+            engine.
+          </p>
+          <p className="marketing-description">
+            Payment should only be made on our website with our verified domain,
+            lordcartel.com
+          </p>
+          <p className="marketing-description">
+            We also take live video call appointments.
           </p>
         </div>
       </div>
