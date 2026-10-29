@@ -182,7 +182,7 @@ const Contact = () => {
           <p className="marketing-eyebrow">Email</p>
           <p className="marketing-description">BrandEngine@lordcartel.com</p>
           <p className="marketing-eyebrow">Instagram</p>
-          <p className="marketing-description">@thylordcartel</p>
+          <p className="marketing-description">@thelordcartel</p>
           <p className="marketing-description">
             We require an initial deposit to start the creation of your brand
             engine.
