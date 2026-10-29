@@ -32,7 +32,7 @@ import LordCartelGold from '../src/brandshowcase/LordCartelGold';
 import ReaperEngine from '../src/brandshowcase/ReaperEngine';
 import OverlordEngine from '../src/brandshowcase/OverLordEngine';
 
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from '@vercel/analytics/react';
 
 //protect routes that require authentication
 const ProtectedRoute = ({ children }) => {
