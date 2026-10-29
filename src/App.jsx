@@ -32,6 +32,8 @@ import LordCartelGold from '../src/brandshowcase/LordCartelGold';
 import ReaperEngine from '../src/brandshowcase/ReaperEngine';
 import OverlordEngine from '../src/brandshowcase/OverLordEngine';
 
+import { Analytics } from '@vercel/analytics/next';
+
 //protect routes that require authentication
 const ProtectedRoute = ({ children }) => {
   const { isAuthenticated, user } = useAuthStore();
@@ -72,6 +74,7 @@ function App() {
 
   return (
     <>
+      <Analytics />
       <div className="maindiv">
         <Routes>
           <Route
